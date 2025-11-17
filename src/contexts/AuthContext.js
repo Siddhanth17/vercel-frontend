@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 export const AuthContext = createContext();
 
 // Configure axios defaults
-axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'https://vercel-backend-psi-three.vercel.app/api';
 
 // Add request interceptor for debugging
 axios.interceptors.request.use(
@@ -56,6 +56,7 @@ const AuthProvider = ({ children }) => {
     } else {
       setLoading(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
   // Load user profile
