@@ -1,0 +1,424 @@
+.cab-booking-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  padding: 3rem 0;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1e40af;
+  text-shadow: 0 2px 8px rgba(30, 64, 175, 0.12);
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.025em;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: #64748b;
+  font-weight: 500;
+  text-shadow: none;
+  opacity: 1;
+}
+
+/* Location Form Section */
+.location-form-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.form-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.location-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.location-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.location-form .form-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.location-form .form-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Trip Summary */
+.trip-summary {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.trip-summary h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.trip-summary p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+/* Cabs Grid */
+.cabs-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.cab-section,
+.bike-section {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cab-section h3,
+.bike-section h3 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.cab-options {
+  display: grid;
+  gap: 1rem;
+}
+
+.cab-card {
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.cab-card:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+  background: white;
+}
+
+.cab-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cab-emoji {
+  font-size: 2rem;
+}
+
+.cab-emoji-large {
+  font-size: 3rem;
+}
+
+.cab-info {
+  flex: 1;
+}
+
+.cab-info h4 {
+  margin: 0 0 0.25rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.cab-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.cab-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.cab-price-large {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.cab-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.feature-tag {
+  background: #e8f2ff;
+  color: #667eea;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Booking Confirmation */
+.booking-confirmation-section {
+  display: flex;
+  justify-content: center;
+}
+
+.confirmation-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.confirmation-card h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.selected-cab {
+  background: #f8f9ff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid #e8f2ff;
+}
+
+.cab-details {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.trip-details {
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #1e40af;
+  border: 2px solid #1e40af;
+}
+
+.btn-secondary:hover {
+  background: #1e40af;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* New Theme Styles */
+.form-card,
+.trip-summary,
+.cab-section,
+.bike-section,
+.cab-card,
+.confirmation-card,
+.selected-cab {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(30, 64, 175, 0.08);
+  border: 1px solid #e5e7eb;
+  background: white;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.form-card:hover,
+.trip-summary:hover,
+.cab-section:hover,
+.bike-section:hover,
+.cab-card:hover,
+.confirmation-card:hover,
+.selected-cab:hover {
+  box-shadow: 0 16px 48px rgba(30, 64, 175, 0.15);
+  transform: translateY(-4px);
+}
+
+.cab-section h3,
+.bike-section h3,
+.confirmation-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.btn,
+.btn-primary,
+.btn-secondary {
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 16px rgba(30, 64, 175, 0.08);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #1e40af;
+  border: 2px solid #1e40af;
+}
+
+.btn-secondary:hover {
+  background: #1e40af;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cab-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .cab-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,266 @@
+.booking-success-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.success-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.success-animation {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.success-icon {
+  font-size: 4rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.train-celebration {
+  font-size: 3rem;
+  margin-top: 1rem;
+  animation: trainMove 3s ease-in-out infinite;
+}
+
+.success-content {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  animation: slideInUp 0.8s ease-out;
+}
+
+.success-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.success-content > p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.booking-details {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pnr-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pnr-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.pnr-number {
+  font-family: monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #10b981;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #10b981;
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.success-message p {
+  margin: 0;
+  color: #059669;
+  font-weight: 500;
+}
+
+.success-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.success-actions .btn {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  min-width: 180px;
+}
+
+.next-steps {
+  text-align: left;
+  background: #f0fdf4;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #bbf7d0;
+}
+
+.next-steps h3 {
+  color: #1f2937;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.next-steps ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.next-steps li {
+  padding: 0.5rem 0;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes trainMove {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-success-page {
+    padding: 1rem 0;
+  }
+
+  .success-container {
+    padding: 0 1rem;
+  }
+
+  .success-content {
+    padding: 2rem;
+  }
+
+  .success-content h1 {
+    font-size: 2rem;
+  }
+
+  .success-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .success-actions .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .pnr-display {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Success Card and Button Styles */
+.success-content,
+.booking-details,
+.next-steps {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(30, 64, 175, 0.08);
+  border: 1px solid #e5e7eb;
+  background: white;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.success-content:hover,
+.booking-details:hover,
+.next-steps:hover {
+  box-shadow: 0 16px 48px rgba(30, 64, 175, 0.15);
+  transform: translateY(-4px);
+}
+
+.btn,
+.btn-primary,
+.btn-secondary {
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 16px rgba(30, 64, 175, 0.08);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #1e40af;
+  border: 2px solid #1e40af;
+}
+
+.btn-secondary:hover {
+  background: #1e40af;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
